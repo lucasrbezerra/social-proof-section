@@ -1,0 +1,272 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Spartan, sans-serif;
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* container */
+#container {
+  background-image: url("../img/bg-pattern-top-desktop.svg"),
+    url("../img/bg-pattern-bottom-desktop.svg");
+  width: 85%;
+  margin: 4em auto;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* top-container */
+#top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  padding: 140px 0;
+  margin: 20px 20px;
+}
+
+/* description*/
+
+#description {
+  width: 40%;
+}
+
+#description h1 {
+  width: 65%;
+  margin-left: 100px;
+  padding: 20px;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: var(--Very-Dark-Magenta);
+}
+
+#description p {
+  width: 90%;
+  margin-left: 100px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: var(--Dark-Grayish-Magenta);
+}
+
+/* rating */
+
+#rating {
+  width: 50%;
+  margin-right: 100px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  margin-bottom: 20px;
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.stars {
+  margin-left: 50px;
+}
+
+article img {
+  height: 25px;
+  margin: 0 5px;
+}
+
+article h3 {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: var(--Very-Dark-Magenta);
+  font-weight: bold;
+}
+
+#rating-box1 {
+  margin-right: 100px;
+}
+
+#rating-box2 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#rating-box3 {
+  margin-left: 100px;
+}
+
+/* bottom container */
+#bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.card {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 8px;
+  margin: 0 25px;
+  width: 450px;
+  height: 320px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.profile h4 {
+  color: var(--White);
+  margin-top: 50px;
+  padding: 5px 15px;
+}
+
+.profile span {
+  color: var(--Soft-Pink);
+  padding: 5px 15px;
+}
+
+.text {
+  color: var(--White);
+  line-height: 1.8rem;
+  margin: 15px 25px;
+  padding: 25px 25px;
+}
+
+#card1 {
+  margin-left: 120px;
+}
+
+#card2 {
+  margin-top: 50px;
+}
+
+#card3 {
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+/* responsive */
+@media (max-width: 1500px) {
+  /* resize container*/
+  #container {
+    width: 375px;
+    text-align: center;
+  }
+  /* top-container */
+  #top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    margin: 0 auto;
+  }
+
+  #description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  #description h1 {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    font-size: 1.8rem;
+  }
+
+  #description p {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* rating */
+
+  #rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  #rating h3 {
+    font-size: 1rem;
+  }
+
+  #rating article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Magenta);
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px 0;
+  }
+
+  .stars {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  /* bottom-container*/
+  #bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  #card1 {
+    margin: 10px auto;
+    padding: 0;
+  }
+
+  #card2 {
+    margin: 10px auto;
+    padding: 0;
+  }
+
+  #card3 {
+    margin: 10px auto;
+    padding: 0;
+  }
+}
